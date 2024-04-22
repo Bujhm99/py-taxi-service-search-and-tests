@@ -1,11 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Delete Manufacturer {{ manufacturer.name }} </h1>
-  <p>
-    Are you sure to delete {{ manufacturer }}.
-    Car will be deleted too.
-  <p/>
+  <h1>Delete Driver </h1>
+  <p>Are you sure to delete {{ driver.username }}.
+    Car will be deleted too.</p>
 
   {% block Buttons %}
         {% include "includes/confirm_buttons.html" %}
