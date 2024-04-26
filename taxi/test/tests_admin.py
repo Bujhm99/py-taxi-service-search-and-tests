@@ -18,12 +18,6 @@ class AdminTest(TestCase):
             license_number="TES12345"
         )
 
-        self.driver_wrong_lisence = get_user_model().objects.create_user(
-            username="driverWrong",
-            password="testdriver",
-            license_number="TES123456"
-        )
-
     def test_driver_lisence_number_listed(self):
         url = reverse("admin:taxi_driver_changelist")
         res = self.client.get(url)
